@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/article.style.css">
+</head>
+<body onload="getData()">
+    <header>
+        <div class="logo">
+            <h2>Jeremie Ngovula</h2> 
+       </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="">A Propos</a></li>
+                <li><a href="article.html">Articles</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Articles</h1>
+    <section>
+        <div>
+            <form action="" method="post" id="createForm" onsubmit="creer(event)">
+                <p>User: <input name="userId"  type="number"></p>
+                <p>Titre: <input name="title"  type="text"></p>
+                <p>Contenu: <textarea name="body" id="" cols="30" rows="10"></textarea></p>
+                <p><button type="submit">Valider</button></p>
+            </form>
+        </div>
+        <table id="tb-article">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>User</th>
+                    <th>Titre</th>
+                    <th>Contenu</th>
+                    <th>Editer</th>
+                    <th>Supprimer</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    
+    </section>
+    <script src="js/article.js"></script>
+</body>
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h2>Jeremie Ngovula</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="">A Propos</a></li>
+                <li><a href="article.html">Articles</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="banner">
+            <p onclick="bienvenu()">
+                <marquee behavior="" direction="">Bienvenu dans notre site</marquee>
+            </p>
+        </div>
+
+        <section class="flex-section">
+            <div>
+                <h3>Titre 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eius aliquam vero commodi tempora
+                    nobis quidem accusantium esse, illum dolore debitis eveniet beatae eaque corrupti. Corrupti alias ad
+                    veritatis necessitatibus.</p>
+            </div>
+
+            <div>
+                <h3>Titre 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eius aliquam vero commodi tempora
+                    nobis quidem accusantium esse, illum dolore debitis eveniet beatae eaque corrupti. Corrupti alias ad
+                    veritatis necessitatibus.</p>
+            </div>
+
+            <div>
+                <h3>Titre 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eius aliquam vero commodi tempora
+                    nobis quidem accusantium esse, illum dolore debitis eveniet beatae eaque corrupti. Corrupti alias ad
+                    veritatis necessitatibus.</p>
+            </div>
+        </section>
+
+        <section class='service'>
+            <h2>Nos services</h2>
+
+            <div class="flex-section service">
+                <div>
+                    <img src="https://www.mali.campusfrance.org/sites/pays/files/mali/styles/mobile_visuel_principal_page/public/Chef.jpg?itok=OHxUbgSl"
+                        alt="">
+                    <h3>Restauration</h3>
+                </div>
+                <div><img
+                        src="https://th.bing.com/th/id/R.0a9da2afb54a61a253d60c3718395e96?rik=5jsznKDqBNK0Ug&pid=ImgRaw&r=0"
+                        alt="">
+                    <h3>Hotel</h3>
+                </div>
+                <div><img
+                        src="https://th.bing.com/th/id/R.ed4df2f1e374a414ab411408e701e5ea?rik=ZEwGsY8%2bnOnFCg&riu=http%3a%2f%2ffressine.com%2fwp-content%2fuploads%2f2016%2f09%2fmaquillage-astuces-make-up-des-yeux.jpeg&ehk=evkTxcr7khK50oG7tRj8kUJ5Rs3HNQvnpCWgTNBqrZU%3d&risl=&pid=ImgRaw&r=0"
+                        alt="">
+                    <h3>Maquillage</h3>
+                </div>
+                <div><img
+                        src="https://www.marseille-tourisme.com/app/uploads/marseille-tourisme/2023/12/thumbs/Coucher-de-soleil-depuis-le-Fort-saint-jean-Massimomenucchi-640x1024.jpg"
+                        alt="">
+                    <h3>Tourisme</h3>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Tarification</h2>
+
+            <div class="flex-section">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Basic</th>
+                            <th>Medium</th>
+                            <th>Premium</th>
+                            <th>Supprimer</th>
+                            <th>Editer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Trafic</th>
+                            <td>Illimité</td>
+                            <td>Illimité</td>
+                            <td>Illimité</td>
+                            <td><a href="/article/delete/1" onclick="supprimer(event)">Supprimer</a></td>
+                            <td><a href="/article/editer/1" onclick="edit(event)">editer</a></td>
+                        </tr>
+                        <tr>
+                            <th>Base des données</th>
+                            <td>1</td>
+                            <td>10</td>
+                            <td>50</td>
+                            <td><a href="/article/delete/2" onclick="supprimer(event)">Supprimer</a></td>
+                            <td><a href="/article/editer/2" onclick="edit(event)">editer</a></td>
+
+                        </tr>
+                        <tr>
+                            <th>Messagerie</th>
+                            <td>Indisponible</td>
+                            <td>50</td>
+                            <td>Illimité</td>
+                            <td><a href="/article/delete/3" onclick="supprimer(event)">Supprimer</a></td>
+                            <td><a href="/article/editer/3" onclick="edit(event)">editer</a></td>
+
+
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th></th>
+                            <th><a href="">Commander</a></th>
+                            <th><a href="">Commander</a></th>
+                            <th><a href="">Commander</a></th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Blog</h2>
+
+            <div class="flex-section">
+                <article>
+                    <h3><a href="">Api avec laravel</a></h3>
+                    <img src="https://www.processmaker.com/wp-content/uploads/2021/09/laravel-workflow-tutorial.png"
+                        alt="">
+                    <p>Lorem, ipsum dolor sit amet Lorem, ipsum dolor sit ametconsectetur adipisicing elit.</p>
+                </article>
+
+                <article>
+                    <h3><a href="">Un CRUD en laravel</a></h3>
+                    <img src="https://www.ropstam.com/wp-content/uploads/2023/10/best-laravel-development-tools.jpg"
+                        alt="">
+                    <p>Lorem, ipsum dolor sit amet Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+                <article>
+                    <h3><a href="">Authentification avec laravel</a></h3>
+                    <img src="https://www.processmaker.com/wp-content/uploads/2021/09/laravel-workflow-tutorial.png"
+                        alt="">
+                    <p>Lorem, ipsum dolor sit amet Lorem, ipsum dolor sit ametconsectetur adipisicing elit.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>Contact</h2>
+            <div class="center">
+            <div class="form">
+                <form action="">
+                    <div class="Contenu">
+                        <div class="colonne">
+                        <div>
+                                <label for="name">Nom :</label> <br>
+                                <input type="text" id="name" name="name">
+                            </div> <br>
+                            <div>
+                                <label for="email">Email :</label> <br>
+                                <input type="email" id="email" name="email">
+                            </div>
+                        </div><br>
+                        <div>
+                            <label for="message" id="mes">Message :</label><br>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        </div>
+                    </div><br>
+
+                    <div class="btn">
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <div>Suivez nous sur :</div>
+            <div>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <img src="" alt="">
+            </div>
+            <div>
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="">A Propos</a></li>
+                    <li><a href="">Services</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <ul>
+                    <li><b>Email :</b> info@monsite.com</li>
+                    <li><b>Tél :</b> 0827262433</li>
+                    <li><b>Adresse :</b> 7, av. ODC, C/Lingwala</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h3>Themes</h3>
+            <ul>
+                <li><input type="radio" name="theme" id="" value="white" onclick="theme(event)">Blanc</li>
+                <li><input type="radio" name="theme" id="noir" value="rgb(37, 37, 37)" onclick="theme(event)">Sombre
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p>
+                copyright ODC 2024 tout droit reservé
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('h3').css('color', 'purple')
+            $('h2').click(function () {
+                $('p').fadeOut(2000)
+            })
+
+            $('h3').click(function () {
+                $('p').slideUp(3000)
+            })
+
+            $('h3').click(function () {
+                $('p').slideDown(3000)
+            })
+            $('h3').click(function () {
+                $('p').toggle(3000)
+            })
+        })
+    </script>
+    <script>
+        const pays = ["RDC", 'France', "Gabon"]
+        /* 
+         const amerique = ["Bresil", "Mexique", "Argentine"] 
+         console.log(pays);
+         pays.pop()
+         console.log(pays);
+         pays.push('Angola')
+         console.log(pays);
+         pays.shift()
+         console.log(pays);
+         pays.unshift('Italie')
+         console.log(pays);
+ 
+         const pays2 = pays.concat(amerique)
+         console.log(pays2);
+         const pays3 = [...pays, ...amerique]
+         console.log(pays3);*/
+
+        /*  // La destructuration c'est attribuer des variables aux elements d'un tableaux
+          const pays = ["RDC", 'France', "Gabon"]
+          const [congo, ...gb] = pays
+          console.log(gb);
+  
+          //  parcourir un tableau
+          const pays = ["RDC", 'France', "Gabon", "Italie"]
+          for (i = 0; i < pays.length; i++) {
+              console.log(pays[i]);
+          }
+          const pays = ["RDC", 'France', "Gabon", "Italie"]
+          let i = 0;
+          while (i<pays.length) {
+              console.log(pays[i]);
+              i++;
+          }
+          pays.forEach(rep => {
+              console.log(rep)
+          });
+          pays.map(rep => {
+              console.log(rep)
+          });
+          for(let i of pays){
+              console.log(i);
+          }
+          const nom = "Marc, Jean, Marthe, Lucie"
+  
+          const tabnom = nom.split(',')
+          console.log(tabnom);
+          
+          for(let i of tabnom){
+              console.log(i);
+          }
+         
+          const voiture= {
+              marque: 'Nissan',
+              couleur: 'Rose',
+              plaque: '75433NKF'
+          }
+          voiture.model = 'Jeep'
+          console.log(voiture);
+          // Pour parcourir un objet on utilise la boucle for in
+  
+          for(let i in voiture){
+              console.log(i, voiture[i]);  // on a utiliser voiture[i] pour afficher tout le contenu de l'objet // avec i nous aurons seulement les clés de l'objet
+          } 
+          // les fonctions
+          function hello(message, nom="Paul"){
+              return message +' ' + nom;
+          }
+  
+          console.log(hello('Salut','Jeremie')); 
+          const bonjour = hello('Bonjour', 'John');
+          console.log(bonjour);
+          hello('Bonsoir')
+  
+          function add(a, b) {
+              return a + b;
+          }
+          console.log(add(3, 2)); 
+          // ou 
+          const somme = function (a, b){
+              return a + b;
+          }
+          const som = somme(9, 7);
+          console.log(som);
+  
+          const car = a => a*a; // ou on peut l'ecrire  const car = (a) => a*a;
+          console.log(car(10)); 
+  
+          const helo = ()=> "Hello word"
+          console.log(helo());
+          
+         // les fonction callback sont des des fonction qui prenent en parametre d'autres fonctions
+          const carre = n => alert('Le carre est '+n*n)
+          const ledouble = n => alert('Le double est ' +n*2)
+  
+  
+          function operation(callback){
+              const nombre = prompt('Entrer un nombre');
+              callback(nombre);
+          }
+  
+          operation(function(nombre){
+              alert("La racine est carrée " + Math.sqrt(nombre))
+          })
+          
+         // les fonctions callback sur les tableaux
+         const tab = [
+              {name:'Jeremie', genre:'Homme'},
+              {name:'Sarah', genre:'Femme'},
+              {name:'Timothee', genre:'Homme'},
+              {name:'Christelle', genre:'Femme'}
+         ]
+         tab.map(pers =>{
+           console.log(pers.name, pers.genre);
+         })
+         //API fetch sert à nous connecter de l'Api //then c'est une methode liée a fetch raison pour laquelle on met un point avant
+         // On utilise une fonction asysnchrone pour recuperer les données recu de l'Api
+  
+         async function getData(){
+         let data = await fetch('https://jsonplaceholder.typicode.com/posts')
+         .then(response => response.json())
+         //console.log(data)
+  
+        
+          data.map(rep =>{
+                 // console.log(rep.id, rep.title);
+              })
+      }
+      getData()
+  
+     const header = document.querySelector('header nav');
+    
+     function bienvenu(){
+      alert("Bienvenu dans notre site")
+     }
+  
+     document.querySelector('h2').addEventListener('mouseover', (e)=>{
+          e.taget.style.color = "blue"
+     })
+  
+     document.querySelector('h2').addEventListener("mouseleave", (event)=>{
+          event.taget.style.color = "red"
+     })*/
+
+        const theme = (event) => {
+            document.body.style.background = event.target.value;
+        }
+        /*  const noir = document.querySelector("#noir")
+       
+          const body = document.querySelector("body");
+       
+          noir.addEventListener("click", (event) =>{
+               body.style.background = "rgba(0, 0, 0, 0.103)";
+          })
+       
+          const titre3 = document.querySelectorAll("h3");
+       
+          for (let i = 0; i < titre3.length; i++) {
+               titre3[i].addEventListener('click', ()=>{
+                   titre3[i].style.color = 'green'
+               })   
+          }*/
+
+        function supprimer(event) {
+            event.preventDefault()
+            const lien = event.target.getAttribute('href')
+            alert(lien)
+
+            document.querySelector('.form form').setAttribute('action', lien);
+        }
+
+        function edit(event) {
+            event.preventDefault()
+            const lien = event.target.getAttribute('href')
+            alert(lien)
+
+            document.querySelector('.form form').setAttribute('action', lien);
+
+            const form = document.querySelector('.form form');
+
+            // la fonction closest c'est pour trouver l'ancetre le plus proche d'un element
+            const tr = event.target.closest('tr')
+            alert(tr.children[0].textContent)
+            form.name.value = tr.children[0].textContent
+            form.email.value = tr.children[1].textContent
+            form.message.value = tr.children[2].textContent
+        }
+    </script>
+</body>
+
+</html>
